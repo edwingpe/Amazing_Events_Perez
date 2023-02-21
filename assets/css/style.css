@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&family=Shantell+Sans:wght@300;500;700&display=swap');
+/* 
+font-family: 'Roboto', sans-serif;
+font-family: 'Shantell Sans', cursive;
+ */
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+header{
+    min-height: 10vh;
+    
+}
+
+.logo-title > span {
+    font-family: 'Shantell Sans', cursive;
+    font-weight: 900;
+}
+main{
+    min-height: 80vh;
+}
+
+footer{
+    min-height: 10vh;
+    border-top: 2px solid black;
+    font-size: 1rem;
+}
+
+footer img {
+    width: 25px;
+    
+}
