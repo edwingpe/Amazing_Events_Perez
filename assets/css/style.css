@@ -8,28 +8,95 @@ font-family: 'Shantell Sans', cursive;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+ }
+
+ body{
+    font-family: 'Roboto', sans-serif;
+    
  }
 
 header{
-    min-height: 10vh;
-    
+    height: 15vh;
+    background-color: #eaeaea;
 }
 
-.logo-title > span {
-    font-family: 'Shantell Sans', cursive;
-    font-weight: 900;
+header .navbar {
+    width: 940px;
+    border-radius: 3px;
 }
+
+.nav-link {
+    color: black;
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    color: #FF595E;
+}
+
+.btn {
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+}
+.btn img {
+    width: 35px;
+    object-fit: cover;
+}
+
 main{
-    min-height: 80vh;
+    background-color: #343A40;
 }
 
 footer{
-    min-height: 10vh;
     border-top: 2px solid black;
     font-size: 1rem;
 }
 
 footer img {
     width: 25px;
-    
+}
+/***********************
+******* CONTACT CSS ****
+************************/
+.title-text{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.title-subtext{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.card-image{
+    width: 100%;
+    height: 8rem;
+    background-color: #FF595E;
+
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.card-text h2 {
+    font-weight: 900;
+    text-align: start;
+}
+
+.card-text p {
+    font-weight: 100;
+    text-align: justify;
+}
+
+.card-btn {
+    width: 32px;
+    height: 32px;
+    padding: 1px 5px;
+    border-radius: 100%;
 }
