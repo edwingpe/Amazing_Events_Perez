@@ -20,7 +20,7 @@ header{
 }
 
 main{
-     height:75vh;
+     min-height:75vh;
      background-color: #eaeaea;
  }
 header .navbar {
@@ -79,26 +79,33 @@ textarea{
     box-shadow: 3px 3px black;
 }
 
-.card-image{
-    width: 100%;
-    height: 8rem;
-    background-color: #FF595E;
+.card {
+    width: 15rem;
+    height: 20rem;
+    background-color: #fcbf49;
+    border: 3px solid black;
 }
 
-.card-image img {
+.card-image{
+    width: 100%;
+    height: 6rem;;  
+}
+
+.card-image > img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-
+    object-fit:cover;
+    border-radius: 3px;
 }
 
 .card-text h2 {
+    font-size: 1.5rem;
     font-weight: 900;
     text-align: start;
 }
 
 .card-text p {
-    font-weight: 100;
+    line-height: 1.2rem;
     text-align: justify;
 }
 
