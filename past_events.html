@@ -11,9 +11,9 @@
     <title>Amazing Events</title>
 </head>
 <body>
-    <header>
+  <header>
       <div class="container d-flex align-item align-items-center justify-content-center p-4 gap-3">
-        <a class="btn btn-warning shadow-sm d-flex justify-content-center" href="./upcoming_events.html"><img src="./assets/img/previous.png" alt=""></a>
+        <a class="text-dark fs-2 d-flex justify-content-center" href="./upcoming_events.html"><i class="bi bi-arrow-left-circle-fill"></i></a>
         <nav class="navbar navbar-expand-lg bg-white shadow text-dark" aria-label="Offcanvas navbar large">
             <div class="container-fluid">
               <a class="navbar-brand ms-3" href="#"><img src="./assets/img/logo_amazing_events_color.png" width="100" alt=""></a>
@@ -34,7 +34,7 @@
                       <a class="nav-link" href="./upcoming_events.html">Upcoming Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Past Events</a>
+                        <a class="active-menu px-2" href="#">Past Events</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./contact.html">Contact</a>
@@ -47,138 +47,119 @@
               </div>
             </div>
         </nav>
-        <a class="btn btn-warning shadow-sm d-flex justify-content-center" href="./contact.html"><img src="./assets/img/next.png" alt=""></a>
+        <a class="text-dark fs-2 d-flex justify-content-center" href="./contact.html"><i class="bi bi-arrow-right-circle-fill"></i></a>
       </div>
-    </header>
-    <main class="container min-vw-50">
-      <div class="title-box pt-3">
-        <p class="title-text text-warning">Past Events</p>
-      </div>
-      <div class="container h-25 pt-2">
-        <form action="">
-          <div class="row align-items-xl-baseline border border-3 border-dark p-2 g-1 px-xl-4">
-            <div class="col-4 col-md-3 col-xl-2">
-              <input type="checkbox" id="category01">
-              <label for="category01">Category01</label>
-            </div>
-            <div class="col-4 col-md-3 col-xl-2">
-              <input type="checkbox" id="category02">
-              <label for="category02">Category02</label>
-            </div>
-            <div class="col-4 col-md-3 col-xl-2">
-              <input type="checkbox" id="category03">
-              <label for="category03">Category03</label>
-            </div>
-            <div class="col-4 col-md-3 col-xl-2">
-              <input type="checkbox" id="category04">
-              <label for="category04">Category04</label>
-            </div>
-            <div class="col-4 col-md-3 col-xl-2">
-              <input type="checkbox" id="category05">
-              <label for="category05">Category05</label>
-            </div>
-            <div class="col-12 col-md-5 col-xl-2 pt-2 d-flex justify-content-center align-items-xl-center gap-2 gap-lg-0">
-              <input type="text" id="find">
-              <button type="submit">find</button>
+  </header>
+  <main>
+    <div class="container-fluid bg-dark text-bg-dark shadow h-25">
+      <form action="">
+        <div class="row align-items-xl-baseline border border-3 border-dark  p-2 px-xl-4">
+          <div class="col-4 col-md-3 col-xl-2">
+            <input type="checkbox" id="category01">
+            <label for="category01">Category01</label>
+          </div>
+          <div class="col-4 col-md-3 col-xl-2">
+            <input type="checkbox" id="category02">
+            <label for="category02">Category02</label>
+          </div>
+          <div class="col-4 col-md-3 col-xl-2">
+            <input type="checkbox" id="category03">
+            <label for="category03">Category03</label>
+          </div>
+          <div class="col-4 col-md-3 col-xl-2">
+            <input type="checkbox" id="category04">
+            <label for="category04">Category04</label>
+          </div>
+          <div class="col-4 col-md-3 col-xl-2">
+            <input type="checkbox" id="category05">
+            <label for="category05">Category05</label>
+          </div>
+          <div class="col-12 col-md-5 col-xl-2 pt-2 d-flex justify-content-center align-items-xl-center gap-2 gap-lg-2">
+            <input type="text" id="find">
+            <button class="btn-find text-bg-warning" type="submit"><i class="bi bi-search"></i></button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="container-fluid mt-3 p-5 ">
+      <div class="row g-3 m-auto mx-2">
+        <div class="col">
+          <div class="card shadow">
+            <img src="./assets/img/cinema_1.jpg" class="card-img" alt="...">
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h1 class="card-title">Cinema</h1>
+              <p class="card-sub-title">Do it</p>
+              <p class="card-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita maiores eaque, molestiae ipsum aut quas.</p>
+              <p class="card-sub-title">Price</p>
+              <button class="card-btn">More Info</button>
             </div>
           </div>
-        </form>
-      </div>
-      <div class="containe h-75">
-        <div class="row row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 g-2 my-2">
-          <div class="col d-flex justify-content-center">
-            <div class="card">
-              <div class="card-image">
-                <img src="./assets/img/cinema.jpg" alt="People watching a movie">
-              </div>
-              <div class="card-text d-flex flex-column mx-3">
-                <h2 class="">Cinema</h2>
-                <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, ipsum facere ab animi fugiat minima officiis</p>
-              </div>
-              <div class="d-flex justify-content-around">
-                <p>$0000</p>
-                <button class="button">More Info</button>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center">
-            <div class="card">
-              <div class="card-image">
-                <img src="./assets/img/food_fair.jpg" alt="A food fair">
-              </div>
-              <div class="card-text d-flex flex-column mx-3">
-                <h2 class="">Food Fair</h2>
-                <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, ipsum facere ab animi fugiat minima officiis</p>
-              </div>
-              <div class="d-flex justify-content-around">
-                <p>$0000</p>
-                <button class="button">More Info</button>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center">
-            <div class="card">
-              <div class="card-image">
-                <img src="./assets/img/costume_party.jpg" alt="A costume party">
-              </div>
-              <div class="card-text d-flex flex-column mx-3">
-                <h2 class="">Costume Party</h2>
-                <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, ipsum facere ab animi fugiat minima officiis</p>
-              </div>
-              <div class="d-flex justify-content-around">
-                <p>$0000</p>
-                <button class="button">More Info</button>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center">
-            <div class="card">
-              <div class="card-image">
-                <img src="./assets/img/marathon.jpg" alt="A marathon">
-              </div>
-              <div class="card-text d-flex flex-column mx-3">
-                <h2 class="">Marathon</h2>
-                <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, ipsum facere ab animi fugiat minima officiis</p>
-              </div>
-              <div class="d-flex justify-content-around">
-                <p>$0000</p>
-                <button class="button">More Info</button>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center">
-            <div class="card">
-              <div class="card-image">
-                <img src="./assets/img/museum_tour.jpg" alt="A museum tour">
-              </div>
-              <div class="card-text d-flex flex-column mx-3">
-                <h2 class="">Museum Tour</h2>
-                <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, ipsum facere ab animi fugiat minima officiis</p>
-              </div>
-              <div class="d-flex justify-content-around">
-                <p>$0000</p>
-                <button class="button">More Info</button>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center">
-            <div class="card">
-              <div class="card-image">
-                <img src="./assets/img/music_concert.jpg" alt="A music concert">
-              </div>
-              <div class="card-text d-flex flex-column mx-3">
-                <h2 class="">Music Concert</h2>
-                <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, ipsum facere ab animi fugiat minima officiis</p>
-              </div>
-              <div class="d-flex justify-content-around">
-                <p>$0000</p>
-                <button class="button">More Info</button>
+        </div>
+        <div class="col">
+          <div class="col">
+            <div class="card shadow">
+              <img src="./assets/img/costume_party_1.jpg" class="card-img" alt="...">
+              <div class="card-body d-flex flex-column justify-content-center">
+                <h1 class="card-title">Costume Party</h1>
+                <p class="card-sub-title">Do it</p>
+                <p class="card-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita maiores eaque, molestiae ipsum aut quas.</p>
+                <p class="card-sub-title">Price</p>
+                <button class="card-btn">More Info</button>
               </div>
             </div>
           </div>
         </div>
+        <div class="col">
+          <div class="card shadow">
+            <img src="./assets/img/food_fair_1.jpg" class="card-img" alt="...">
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h1 class="card-title">Food Fair</h1>
+              <p class="card-sub-title">Do it</p>
+              <p class="card-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita maiores eaque, molestiae ipsum aut quas.</p>
+              <p class="card-sub-title">Price</p>
+              <button class="card-btn">More Info</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow">
+            <img src="./assets/img/marathon_1.jpg" class="card-img" alt="...">
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h1 class="card-title">Marathon</h1>
+              <p class="card-sub-title">Do it</p>
+              <p class="card-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita maiores eaque, molestiae ipsum aut quas.</p>
+              <p class="card-sub-title">Price</p>
+              <button class="card-btn">More Info</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow">
+            <img src="./assets/img/museum_tour_1.jpg" class="card-img" alt="...">
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h1 class="card-title">Museum Tour</h1>
+              <p class="card-sub-title">Do it</p>
+              <p class="card-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita maiores eaque, molestiae ipsum aut quas.</p>
+              <p class="card-sub-title">Price</p>
+              <button class="card-btn">More Info</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-lg">
+            <img src="./assets/img/music_concert_1.jpg" class="card-img" alt="...">
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h1 class="card-title">Music Concert</h1>
+              <p class="card-sub-title">Do it</p>
+              <p class="card-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita maiores eaque, molestiae ipsum aut quas.</p>
+              <p class="card-sub-title">Price</p>
+              <button class="card-btn">More Info</button>
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
+    </div>
+  </main>
     <footer class="d-flex align-items-center justify-content-around px-3">
       <div class="d-flex gap-3">
         <a href="#" class="text-decoration-none"><img src="./assets/img/logo_amazing_events_white.png" width="100" alt=""></a>
