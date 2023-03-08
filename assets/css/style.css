@@ -79,7 +79,7 @@ textarea{
 ******* CARD CSS ****
 ************************/
 .card {
-    width: 280px;
+    width: 18rem;
     height: 380px;
     border-radius: 20px;
     overflow: hidden;
@@ -89,7 +89,7 @@ textarea{
 .card-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit:cover;
     border-radius: 10px;
 }
 
@@ -169,7 +169,7 @@ textarea{
     line-height: 2.8rem;
     text-transform: capitalize;
     font-weight: 700;
-    /* font-size: 1.2rem; */
+    font-size: 1.2rem;
 }
 
 
