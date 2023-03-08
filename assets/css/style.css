@@ -79,7 +79,7 @@ textarea{
 ******* CARD CSS ****
 ************************/
 .card {
-    width: 18rem;
+    width: 280px;
     height: 380px;
     border-radius: 20px;
     overflow: hidden;
