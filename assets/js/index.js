@@ -1,8 +1,22 @@
 const divElements = document.getElementById('divCards')
 const checkContainer = document.getElementById('check-container')
+const input = document.getElementById('find')
 
+
+//-----Eventos
+
+input.addEventListener('input',mainFilter)
+
+checkContainer.addEventListener('change',mainFilter)
+
+
+//-----Funciones
 
 function createCards(array){
+  if (array.length == 0){
+    divElements.innerHTML = `<h2>Not Matches</h2>`
+    return
+  }
     let cards = ''
     for (const info of array) {
         cards +=`<div class="col">
@@ -34,7 +48,6 @@ function createCards(array){
 function createChecks(array){
   let checkBoxes = ''
   let categories = new Set(array.map(evento => evento.category))
-  console.log(categories)
   categories.forEach(category => {
     checkBoxes += `<div class="form-check">
     <input class="form-check-input" type="checkbox" value="${category}" id="${category}">
@@ -44,5 +57,30 @@ function createChecks(array){
   checkContainer.innerHTML = checkBoxes
 }
 
+function textFilter(array, text){
+  let filterArray = array.filter(element => element.name.toLowerCase().includes(text.toLowerCase()))
+  return filterArray
+}
+
+function checkFilter(array) {
+  let options = document.querySelectorAll("input[type='checkbox']")
+  let arrayCheck = Array.from(options)
+  arrayCheck = arrayCheck.filter(option => option.checked)
+  arrayCheck = arrayCheck.map(option => option.value)
+  filterArray = array.filter( elemento => arrayCheck.includes(elemento.category))
+  if (arrayCheck.length > 0) {
+    return filterArray
+  }
+  return array
+}
+
+function mainFilter(){
+  let initialFilter = textFilter(data.events,input.value)
+  let filter = checkFilter(initialFilter)
+  createCards(filter)
+
+} 
+
+//-----Llamada a funciones 
 createCards(data.events)
 createChecks(data.events)

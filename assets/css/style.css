@@ -24,6 +24,10 @@ main{
      min-height:75vh;
  }
 
+ .filter-container {
+    min-width: 20rem;
+ }
+
 .nav-link {
     color: black;
     font-weight: 700;
