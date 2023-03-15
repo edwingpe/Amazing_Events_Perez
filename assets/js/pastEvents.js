@@ -43,7 +43,7 @@ function createCards(array){
               <p class="card-sub-title">$${info.price}</p>
               </div>
               <div class="col-8">
-                <a class="card-btn" href="./details.html" target="_self">More Info</a>
+                <a class="card-btn" href="./details.html?id=${info._id}" target="_self">More Info</a>
               </div>
             </div>
           </div>
