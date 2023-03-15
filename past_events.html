@@ -51,36 +51,10 @@
       </div>
   </header>
   <main>
-    <div class="container-fluid text-center bg-dark text-bg-dark shadow h-25">
-      <form>
-        <div class="row align-items-xl-baseline border border-3 border-dark p-2 px-xl-4">
-          <div class="col-4 col-md-3 col-xl-2">
-            <input type="checkbox" id="category01">
-            <label for="category01">Category01</label>
-          </div>
-          <div class="col-4 col-md-3 col-xl-2">
-            <input type="checkbox" id="category02">
-            <label for="category02">Category02</label>
-          </div>
-          <div class="col-4 col-md-3 col-xl-2">
-            <input type="checkbox" id="category03">
-            <label for="category03">Category03</label>
-          </div>
-          <div class="col-4 col-md-3 col-xl-2">
-            <input type="checkbox" id="category04">
-            <label for="category04">Category04</label>
-          </div>
-          <div class="col-4 col-md-3 col-xl-2">
-            <input type="checkbox" id="category05">
-            <label for="category05">Category05</label>
-          </div>
-          <div class="col-12 col-md-5 col-xl-2 pt-2 d-flex justify-content-center align-items-xl-center gap-2 gap-lg-2">
-            <input type="text" id="find">
-            <button class="btn-find text-bg-warning" type="submit"><i class="bi bi-search"></i></button>
-          </div>
-        </div>
-      </form>
-    </div>
+    <div class="container filter-container d-flex flex-wrap bg-dark text-bg-dark shadow p-4">
+      <input class="form-control" type="text" placeholder="Lets find your event" id="find">
+      <div id="check-container" class="d-flex flex-wrap justify-content-center border border-3 shadow border-dark pt-2 gap-3 "></div>
+  </div>
     <div class="container-fluid mt-3 p-5 ">
       <div id="divCards" class="row g-3 m-auto mx-2"></div>
     </div>

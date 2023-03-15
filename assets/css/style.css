@@ -26,6 +26,8 @@ main{
 
  .filter-container {
     min-width: 20rem;
+    max-width: 58.75rem;
+    border-radius: 3px;
  }
 
 .nav-link {

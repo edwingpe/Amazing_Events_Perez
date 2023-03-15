@@ -10,7 +10,7 @@ input.addEventListener('input',mainFilter)
 checkContainer.addEventListener('change',mainFilter)
 
 
-//-----Funciones
+//-----Funciones Filtro
 
 function createCards(array){
   if (array.length == 0){
