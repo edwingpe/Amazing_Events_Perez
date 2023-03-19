@@ -9,6 +9,21 @@ input.addEventListener('input',mainFilter)
 
 checkContainer.addEventListener('change',mainFilter)
 
+//-----Funciones
+async function getData () {
+  let data = await fetch("https://mindhub-xj03.onrender.com/api/amazing")
+                  .then(response => response.json())
+                  .then(data => {
+                    return data
+                  })
+  return data
+}
+
+async function iniciar (){ 
+  let info = await getData()
+  console.log(info)
+  createCards(info.events)
+}
 
 //-----Funciones Filtro
 
@@ -82,5 +97,6 @@ function mainFilter(){
 } 
 
 //-----Llamada a funciones 
-createCards(data.events)
+iniciar()
+/* createCards(data.events) */
 createChecks(data.events)
