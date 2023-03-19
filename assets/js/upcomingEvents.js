@@ -20,7 +20,9 @@ function filterUpcomingEvents(data){
             uEvents.push(data.events[i])
          }
     }
-    sessionStorage.setItem('upcomingEvents', uEvents)
+    console.log(uEvents)
+    sessionStorage.setItem('upcomingEvents', JSON.stringify(uEvents))
+
     return uEvents
 }
 
