@@ -18,6 +18,7 @@ function filterPastEvents (data){
             pEvents.push(data.events[i])
         }
     }
+    sessionStorage.setItem('pastEvents', pEvents)
     return pEvents
 }
 
