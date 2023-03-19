@@ -3,7 +3,6 @@ const checkContainer = document.getElementById('check-container')
 const input = document.getElementById('find')
 
 
-
 //-----Eventos
 
 input.addEventListener('input',mainFilter)
