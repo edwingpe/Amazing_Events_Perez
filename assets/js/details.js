@@ -1,3 +1,5 @@
+data = JSON.parse(sessionStorage.getItem('dataEvents'))
+
 const queryString = document.location.search
 
 const id = new URLSearchParams(queryString).get("id")
