@@ -1,4 +1,4 @@
-data = JSON.parse(sessionStorage.getItem('dataEvents'))
+data = JSON.parse(localStorage.getItem('dataEvents'))
 
 const queryString = document.location.search
 

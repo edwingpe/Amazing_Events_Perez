@@ -1,15 +1,4 @@
-//-----Funcion Async para obtener datos desde la API
-let dataEvents;
-const getEvents = async () => {
-    try {
-        const response = await fetch('https://mindhub-xj03.onrender.com/api/amazing')
-        dataEvents = await (response.json())
-        sessionStorage.setItem('dataEvents', JSON.stringify(dataEvents))
-    }
-    catch (error) {
-        alert('Failed to get dataEvents')
-    }
-}
+data = JSON.parse(localStorage.getItem("dataEvents"))
 
 //----Funciones Principales
 function createCards(array) {
@@ -82,4 +71,25 @@ function checkFilter(array) {
     return array
 }
 
-getEvents()
+function filterUpcomingEvents(data){
+  let uEvents=[]
+  for (let i = 0; i < data.events.length; i++) {
+       if (data.events[i].date >= data.currentDate){
+          uEvents.push(data.events[i])
+       }
+  }
+  console.log(uEvents)
+  localStorage.setItem('upcomingEvents', JSON.stringify(uEvents))
+
+  /* return uEvents */
+}
+
+function filterPastEvents (data){
+  let pEvents = []
+  for (let i = 0; i < data.events.length; i++) {
+      if (data.events[i].date < data.currentDate){
+          pEvents.push(data.events[i])
+      }
+  }
+  localStorage.setItem('pastEvents', JSON.stringify(pEvents))
+}
