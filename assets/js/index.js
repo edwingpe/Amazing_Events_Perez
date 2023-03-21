@@ -16,7 +16,6 @@ async function getEvents() {
     filterPastEvents(dataEvents)
 }
 
-
 //-----Eventos
 
 input.addEventListener('input',mainFilter)

@@ -8,7 +8,7 @@ function createCards(array) {
     }
     let cards = ''
     for (const info of array) {
-        cards += `<div class="col">
+        cards += `<div class="col-auto">
             <div class="card shadow">
               <img class="card-img" src=${info.image}>
               <div class="card-body row g-0">
