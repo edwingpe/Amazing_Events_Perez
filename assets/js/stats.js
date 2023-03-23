@@ -2,14 +2,6 @@ dataPastEvents = JSON.parse(localStorage.getItem('pastEvents'))
 dataUpcomingEvents = JSON.parse(localStorage.getItem('upcomingEvents'));
 dataEvents = JSON.parse(localStorage.getItem('dataEvents'));
 
-/* let pastEventsCategories = Array.from(new Set (dataPastEvents.map(element => element.category))) 
-
-let prueba = pastEventsCategories.map(cate => dataPastEvents.filter(event => event.category === cate))
-
-console.log(prueba); */
-
-/* let upcomingEventsCategories = Array.from(new Set (dataUpcomingEvents.map(element => element.category))) */
-
 //-----Capturar elementos HTML
 
 const eventTable= document.getElementById('eventTable');
@@ -97,9 +89,9 @@ function addRowMainTable(data){
     const eventTable= document.getElementById('eventTable');
     eventTable.innerHTML = `
         <tr>
-            <td>${data[0].name} ${data[0].percentage}%</td>
-            <td>${data[1].name} ${data[1].percentage}%</td>
-            <td>${data[2].name} ${data[2].percentage}</td>
+            <td width="200">${data[0].name} ${data[0].percentage}%</td>
+            <td width="200">${data[1].name} ${data[1].percentage}%</td>
+            <td width="200">${data[2].name} ${data[2].percentage}</td>
         </tr>
     `    
 }
@@ -109,9 +101,9 @@ function addRowTable(data, html) {
     data.forEach(element => {
         row += `
         <tr>
-            <td>${element.category}</td>
-            <td>${element.revenues}</td>
-            <td>${element.attendance.toFixed(2)}%</td>
+            <td colspan=1 width="200">${element.category}</td>
+            <td colspan=1 width="200">$${element.revenues}</td>
+            <td colspan=1 width="200">${element.attendance.toFixed(2)}%</td>
             
         </tr>
     `
@@ -121,16 +113,8 @@ function addRowTable(data, html) {
 }
 
 addRowMainTable(mainResultsData(assitancePerEvent(dataPastEvents),assitancePerEvent(dataPastEvents).reverse(),capacityPerEvent(dataPastEvents)),eventTable)
-
 addRowTable(dataStatistics(dataUpcomingEvents),upcomingTable)
 addRowTable(dataStatistics(dataPastEvents),pastTable)
-
-/* console.log(pastEventsCategories)
-console.log(upcomingEventsCategories); */
-
-/* console.log(dataEvents);
-console.log(dataPastEvents);
-console.log(dataUpcomingEvents); */
 
 
 
