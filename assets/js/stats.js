@@ -9,7 +9,7 @@ const upcomingTable = document.getElementById('upcomingTable');
 const pastTable= document.getElementById('pastTable');
 
 
-//----- Datos de eventos pasados y futuros
+//----- Datos de estadisticas para tablas 2 y 3. Utilizando funciones de orden superior.
 
 function dataStatistics(array) {
     let eventsCategories = Array.from( new Set (array.map(element => element.category)))
@@ -83,7 +83,7 @@ function mainResultsData (highestPercentageData, lowestPercentageData, largerCap
     return data
 }
 
-//-----Agregar fila a tablas
+//-----Agregar fila a tabla secundaria y principal.
 
 function addRowMainTable(data){
     const eventTable= document.getElementById('eventTable');
